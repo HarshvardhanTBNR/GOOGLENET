@@ -1,201 +1,204 @@
 <html>
 <title>Google lens vs Mobile Net</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 <head></head>
+
 <body>
-<center>
-<label>Case Study between MobileNet and GoogleLens</label>
-<br>
-<span><b>Google Lens</b>
-<img src="GOOGLE LENS.png" id="lens" ></span>
-<br><br>
-<b style="color:red;">VS</b>
-<br><br>
-<b class="btn btn-primary">MobileNet</b>
-</center>
-<ol>
-<div>
-<li class="col-sm-4 col-xs-12" style="background-color: gray;">
-<b>Test Image - </b>
-<img src="Glass.jpg" class="img-responsive" style="width:100px;">
-</li>
+    <center>
+        <label>Case Study between MobileNet and GoogleLens</label>
+        <br>
+        <span><b>Google Lens</b>
+            <img src="GOOGLE LENS.png" id="lens"></span>
+        <br><br>
+        <b style="color:red;">VS</b>
+        <br><br>
+        <b class="btn btn-primary">MobileNet</b>
+    </center>
+    <ol>
+        <div>
+            <li class="col-sm-4 col-xs-12" style="background-color: gray;">
+                <b>Test Image - </b>
+                <img src="Glass.jpg" class="img-responsive" style="width:100px;">
+            </li>
 
-<h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-Output on <b>GOOGLE LENS</b> -
-<span>Disposal glass</span>
-</h5>
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>GOOGLE LENS</b> -
+                <span>Disposal glass</span>
+            </h5>
 
-<h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-Output on <b>Mobile Net</b> -
-<span>Glass</span>
-</h5>
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>Mobile Net</b> -
+                <span>Glass</span>
+            </h5>
 
-<div class="mini_result" class="col-xs-12" style="background-color:gray;">
-<h4>Result -</h4>
-<hr>
-<h4>MobileNet WINS!!</h4>
-</div>
+            <div class="mini_result" class="col-xs-12" style="background-color:gray;">
+                <h4>Result -</h4>
+                <hr>
+                <h4>MobileNet WINS!!</h4>
+            </div>
 
-</div>
-<br>
-<div>
-    <li class="col-sm-4 col-xs-12">
-    <b>Test Image - </b>
-    <img src="Cap.jpg" class="img-responsive" style="width:100px;" style="background-color:gray;">
-    </li>
-    
-    <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-    Output on <b>GOOGLE LENS</b> -
-    <span>Cap</span>
-    </h5>
-    
-    <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-    Output on <b>Mobile Net</b> -
-    <span>Cap</span>
-    </h5>
-    
-    <div class="mini_result" class="col-xs-12" style="background-color:gray;">
-    <h4>Result -</h4>
-    <hr>
-    <h4>Its a DRAW</h4>
-    </div>
-    
-    </div>
-    <br>
-    <div>
-        <li class="col-sm-4 col-xs-12" style="background-color:gray;">
-        <b>Test Image - </b>
-        <img src="Sharpner.jpg" class="img-responsive" style="width:100px">
-        </li>
-        
-        <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-        Output on <b>GOOGLE LENS</b> -
-        <span>Shopping Object</span>
-        </h5>
-        
-        <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-        Output on <b>Mobile Net</b> -
-        <span>Sharpener</span>
-        </h5>
-        
-        <div class="mini_result" class="col-xs-12" style="background-color:gray;">
-        <h4>Result -</h4>
-        <hr>
-        <h4>MobileNet WINS!!</h4>
         </div>
-        
+        <br>
+        <div>
+            <li class="col-sm-4 col-xs-12">
+                <b>Test Image - </b>
+                <img src="Cap.jpg" class="img-responsive" style="width:100px;" style="background-color:gray;">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>GOOGLE LENS</b> -
+                <span>Cap</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>Mobile Net</b> -
+                <span>Cap</span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="background-color:gray;">
+                <h4>Result -</h4>
+                <hr>
+                <h4>Its a DRAW</h4>
+            </div>
+
         </div>
         <br>
         <div>
             <li class="col-sm-4 col-xs-12" style="background-color:gray;">
-            <b>Test Image - </b>
-            <img src="Remote.jpg" class="img-responsive" style="width:100px">
+                <b>Test Image - </b>
+                <img src="https://5.imimg.com/data5/OO/TN/PQ/SELLER-49386709/plastic-pencil-sharpener-500x500.jpg" class="img-responsive" style="width:100px">
             </li>
-            
+
             <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-            Output on <b>GOOGLE LENS</b> -
-            <span>Shoes</span>
+                Output on <b>GOOGLE LENS</b> -
+                <span>Shopping Object</span>
             </h5>
-            
+
             <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-            Output on <b>Mobile Net</b> -
-            <span>Remote</span>
+                Output on <b>Mobile Net</b> -
+                <span>Sharpener</span>
             </h5>
-            
+
             <div class="mini_result" class="col-xs-12" style="background-color:gray;">
-            <h4>Result -</h4>
-            <hr>
-            <h4>MobileNet WINS!!</h4>
+                <h4>Result -</h4>
+                <hr>
+                <h4>MobileNet WINS!!</h4>
             </div>
-            
+
+        </div>
+        <br>
+        <div>
+            <li class="col-sm-4 col-xs-12" style="background-color:gray;">
+                <b>Test Image - </b>
+                <img src="https://www.tataplay.com/cms-assets/2020-03/remote1.png" class="img-responsive" style="width:50px; height: 80px;">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>GOOGLE LENS</b> -
+                <span>Shoes</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>Mobile Net</b> -
+                <span>Remote</span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="background-color:gray;">
+                <h4>Result -</h4>
+                <hr>
+                <h4>MobileNet WINS!!</h4>
             </div>
-            <br>  
-            <div>
-                <li class="col-sm-4 col-xs-12" style="background-color:gray;">
+
+        </div>
+        <br>
+        <div>
+            <li class="col-sm-4 col-xs-12" style="background-color:gray;">
                 <b>Test Image - </b>
                 <img src="Board.jpg" class="img-responsive" style="width:100px">
-                </li>
-                
-                <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
                 Output on <b>GOOGLE LENS</b> -
                 <br>
                 <span>Board</span>
-                </h5>
-                
-                <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
                 Output on <b>Mobile Net</b> -
                 <span>Board</span>
-                </h5>
-                
-                <div class="mini_result" class="col-xs-12" style="background-color:gray;">
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="background-color:gray;">
                 <h4>Result -</h4>
                 <hr>
                 <h4>AGAIN A DRAW</h4>
-                </div>
-                
-                </div>
+            </div>
+
+        </div>
+        <br>
+
+        <div>
+            <li class="col-sm-4 col-xs-12" style="background-color:gray;">
+                <b>Test Image - </b>
+                <img src="IMG_20220219_124214.jpg" class="img-responsive" style="width:100px">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>GOOGLE LENS</b> -
+                <span>Orange</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>Mobile Net</b> -
+                <span>Ball</span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="background-color:gray;">
+                <h4>Result -</h4>
+                <hr>
+                <h4>MobileNet WINS!!</h4>
+            </div>
+
+        </div>
+        <br>
+        <div>
+            <li class="col-sm-4 col-xs-12" style="background-color:gray;">
+                <b>Test Image - </b>
+                <img src="IMG_20220219_124229.jpg" class="img-responsive" style="width:100px">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>GOOGLE LENS</b> -
                 <br>
-                
-                <div>
-                    <li class="col-sm-4 col-xs-12" style="background-color:gray;">
-                    <b>Test Image - </b>
-                    <img src="IMG_20220219_124214.jpg" class="img-responsive" style="width:100px">
-                    </li>
-                    
-                    <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-                    Output on <b>GOOGLE LENS</b> -
-                    <span>Orange</span>
-                    </h5>
-                    
-                    <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-                    Output on <b>Mobile Net</b> -
-                    <span>Ball</span>
-                    </h5>
-                    
-                    <div class="mini_result" class="col-xs-12" style="background-color:gray;">
-                    <h4>Result -</h4>
-                    <hr>
-                    <h4>MobileNet WINS!!</h4>
-                    </div>
-                    
-                    </div>
-                    <br>  
-                    <div>
-                        <li class="col-sm-4 col-xs-12" style="background-color:gray;">
-                        <b>Test Image - </b>
-                        <img src="IMG_20220219_124229.jpg" class="img-responsive" style="width:100px">
-                        </li>
-                        
-                        <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-                        Output on <b>GOOGLE LENS</b> -
-                        <br>
-                        <span>Stick</span>
-                        </h5>
-                        
-                        <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
-                        Output on <b>Mobile Net</b> -
-                        <span>Pen</span>
-                        </h5>
-                        
-                        <div class="mini_result" class="col-xs-12" style="background-color:gray;">
-                        <h4>Result -</h4>
-                        <hr>
-                        <h4>MOBILENET WINS!!</h4>
-                        </div>
-                        
-                        </div>
-                        <br>
-                        
-</ol>
+                <span>Stick</span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12" style="background-color:gray;">
+                Output on <b>Mobile Net</b> -
+                <span>Pen</span>
+            </h5>
+
+            <div class="mini_result" class="col-xs-12" style="background-color:gray;">
+                <h4>Result -</h4>
+                <hr>
+                <h4>MOBILENET WINS!!</h4>
+            </div>
+
+        </div>
+        <br>
+
+    </ol>
 </body>
+
 </html>
